@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses — Connectica</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+      
+      <!-- ЛОГО -->
+<a href="#" class="logo">
+  <img src="img/logo.svg" alt="Connectica">
+  <span class="logo-text">CONNECTICA</span>
+</a>
+
+          <!-- НАВИГАЦИЯ -->
+          <nav class="nav">
+            <a href="/index.html" class="nav__link nav__link--active">Home</a>
+            <a href="/courses.html">Courses</a>
+            <a href="/about.html">About us</a>
+          </nav>
+      
+          <!-- ACTIONS -->
+          <div class="header__actions">
+            <a href="#signin" class="btn-auth btn-auth--ghost">Sign in</a>
+            <a href="#signup" class="btn-auth btn-auth--primary">Sign up</a>
+          </div>
+          
+      
+          <!-- BURGER (mobile) -->
+          <button class="burger" onclick="document.body.classList.toggle('menu-open')">
+            <span></span><span></span><span></span>
+          </button>
+      
+        </div>
+      
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu">
+          <a href="#">Home</a>
+          <a href="/courses.html">Courses</a>
+          <a href="/about.html">About us</a>
+          <a href="#" class="btn btn--outline">Sign in</a>
+          <a href="#" class="btn btn--blue">Sign up</a>
+        </div>
+      </header>
+      
+  <main>
+    <!-- HERO COURSES -->
+    <section class="courses-hero">
+      <div class="container courses-hero__container">
+        <div class="courses-hero__content">
+          <h1 class="courses-hero__title">Courses</h1>
+
+          <p class="courses-hero__subtitle">
+            Navigate the world of effective<br />communication
+          </p>
+
+          <div class="courses-hero__points">
+            <div class="courses-hero__point">
+              <span class="courses-hero__check" aria-hidden="true"></span>
+              Read. Talk.
+            </div>
+            <div class="courses-hero__point">
+              <span class="courses-hero__check" aria-hidden="true"></span>
+              Learn. Improve.
+            </div>
+          </div>
+        </div>
+
+        <div class="courses-hero__media">
+          <!-- картинку/мокап ты вставишь сам -->
+          <img src="img/courses-mock.png" alt="Course preview" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 222222222 -->
+    <section class="why-struggle">
+        <div class="container why-struggle__container">
+          <h2 class="why-struggle__title">
+            Why do we sometimes struggle<br>
+            to understand each other?
+          </h2>
+      
+          <div class="why-struggle__text">
+            <p>
+              Have you ever found yourself in a conversation that just didn’t make sense,
+              even though you were both speaking the same language? Often, this happens
+              because our past experiences shape our responses, expectations, and
+              understanding of others. Every interaction is influenced by our unique
+              backgrounds, which can lead to communication challenges—and, at times,
+              misunderstandings, conflicts or even major issues in our personal and
+              professional lives.
+            </p>
+      
+            <p>
+              Poor communication ⇒ misunderstandings / arguments / conflicts ⇒ serious
+              problems in both personal life and business ❤️
+            </p>
+      
+            <p>
+              At Connectica we believe that mastering the skill of communication is
+              essential to building successful, harmonious relationships across all
+              areas of life. Our training platform is designed to teach people how to
+              effectively navigate and bridge these communication gaps.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 33333333333 -->
+      <section class="courses-listing">
+        <div class="container courses-listing__container">
+      
+          <h2 class="courses-listing__title">Courses</h2>
+      
+          <!-- filters row -->
+          <div class="courses-listing__filters">
+            <button class="courses-tab is-active" type="button">all</button>
+            <button class="courses-tab" type="button">Not enrolled</button>
+            <button class="courses-tab" type="button">newest</button>
+            <button class="courses-tab" type="button">popular</button>
+            <button class="courses-tab" type="button">free</button>
+            <button class="courses-tab" type="button">certificate</button>
+      
+            <div class="courses-dd">
+              <button class="courses-dd__btn" type="button" aria-expanded="false">
+                Learning programs <span class="courses-dd__chev">▾</span>
+              </button>
+              <div class="courses-dd__menu" role="menu">
+                <button type="button" role="menuitem">Communication essentials duo</button>
+                <button type="button" role="menuitem">Cultural compass</button>
+                <button type="button" role="menuitem">Talk smarter, think broader</button>
+              </div>
+            </div>
+          </div>
+      
+          <!-- search -->
+          <form class="courses-search" action="#" onsubmit="return false">
+            <input class="courses-search__input" type="search" placeholder="Search for courses" />
+            <button class="courses-search__btn" type="submit" aria-label="Search">
+              🔍
+            </button>
+          </form>
+      
+          <!-- grid -->
+          <div class="courses-stack">
+
+            <article class="course-row">
+              <div class="course-row__img">
+                <img src="img/course-1.png" alt="Course image">
+              </div>
+          
+              <div class="course-row__content">
+                <h3 class="course-row__title">Course I Effective communication</h3>
+                <p class="course-row__text">
+                  You’ll dive into the art of effective communication, uncovering the answers to why
+                  misunderstandings arise even when speaking the same language. These lessons will guide you
+                  through resolving conflicts and avoiding them before they start.
+                </p>
+          
+                <div class="course-row__bottom">
+                  <div class="course-row__price">€49</div>
+                  <a class="course-row__btn" href="#">Enroll</a>
+                </div>
+              </div>
+            </article>
+          
+            <article class="course-row">
+              <div class="course-row__img">
+                <img src="img/course-2.png" alt="Course image">
+              </div>
+          
+              <div class="course-row__content">
+                <h3 class="course-row__title">
+                  Course II Intercultural communication: theoretical module. Finland
+                </h3>
+                <p class="course-row__text">
+                  FINLAND. Intercultural communication goes beyond understanding customs; it’s about building relationships
+                  rooted in respect, empathy, and openness to new experiences. This module equips you with the tools to
+                  confidently navigate diverse cultural settings, whether in international business, friendships, or teamwork
+                  within multicultural environments.
+                </p>
+          
+                <div class="course-row__bottom">
+                  <div class="course-row__price">€59</div>
+                  <a class="course-row__btn" href="#">Enroll</a>
+                </div>
+              </div>
+            </article>
+          
+            <article class="course-row">
+              <div class="course-row__img">
+                <img src="img/course-3.png" alt="Course image">
+              </div>
+          
+              <div class="course-row__content">
+                <h3 class="course-row__title">
+                  Course II Intercultural communication: practical module. Finland
+                </h3>
+                <p class="course-row__text">
+                  FINLAND. The second course focuses on intercultural communication—an essential skill for appreciating diverse
+                  perspectives, enhancing cross-cultural communication, developing cultural intelligence, and fostering mutual
+                  respect in today’s globalized world.
+                </p>
+          
+                <div class="course-row__bottom">
+                  <div class="course-row__price">€59</div>
+                  <a class="course-row__btn" href="#">Enroll</a>
+                </div>
+              </div>
+            </article>
+          
+            <article class="course-row">
+              <div class="course-row__img course-row__img--dim">
+                <img src="img/course-4.jpg" alt="Course image">
+                <span class="course-row__play" aria-hidden="true">▶</span>
+              </div>
+          
+              <div class="course-row__content">
+                <h3 class="course-row__title">
+                  Course II Intercultural communication: theoretical module. USA
+                </h3>
+          
+                <div class="course-row__bottom course-row__bottom--tight">
+                  <div class="course-row__price">€59</div>
+                  <a class="course-row__btn" href="#">Enroll</a>
+                </div>
+              </div>
+            </article>
+          
+            <!-- hidden -->
+            <article class="course-row is-hidden">
+              <div class="course-row__img">
+                <img src="img/course-5.jpg" alt="Course image">
+              </div>
+              <div class="course-row__content">
+                <h3 class="course-row__title">Course III Cultural compass</h3>
+                <p class="course-row__text">
+                  Practical tools and short exercises to help you adapt communication styles and reduce friction.
+                </p>
+                <div class="course-row__bottom">
+                  <div class="course-row__price">€39</div>
+                  <a class="course-row__btn" href="#">Enroll</a>
+                </div>
+              </div>
+            </article>
+          
+            <article class="course-row is-hidden">
+              <div class="course-row__img">
+                <img src="img/course-6.jpg" alt="Course image">
+              </div>
+              <div class="course-row__content">
+                <h3 class="course-row__title">Course IV Leading across cultures</h3>
+                <p class="course-row__text">
+                  Leadership patterns across cultures: expectations, motivation, feedback and decision-making.
+                </p>
+                <div class="course-row__bottom">
+                  <div class="course-row__price">€79</div>
+                  <a class="course-row__btn" href="#">Enroll</a>
+                </div>
+              </div>
+            </article>
+          
+          </div>
+          <p class="courses-empty" id="coursesEmpty" style="display:none;">
+  The school owner is working hard preparing the courses for you.
+</p>
+
+      </section>
+
+      <section class="bundles">
+        <div class="container bundles__container">
+          <h2 class="bundles__title">Bundles</h2>
+      
+          <div class="bundles__tabs">
+            <button class="bundles-tab is-active" type="button">All learning programs</button>
+            <button class="bundles-tab" type="button">Not enrolled</button>
+          </div>
+      
+          <div class="bundles-grid">
+            <!-- CARD 1 -->
+            <article class="bundle-card">
+              <div class="bundle-card__media">
+                <span class="bundle-card__badge">2 Courses</span>
+      
+                <div class="bundle-card__ribbon">
+                  <span>Special offer</span>
+                </div>
+      
+                <img src="img/bundle-1.jpg" alt="Bundle image">
+              </div>
+      
+              <div class="bundle-card__body">
+                <h3 class="bundle-card__name">Communication essentials duo</h3>
+      
+                <p class="bundle-card__desc">
+                  Get hands-on with communication in this dynamic pairing of courses! With Effective
+                  Communication, you'll sharpen your ability to...
+                </p>
+      
+                <div class="bundle-card__bottom">
+                  <a class="bundle-card__btn" href="#">Enroll</a>
+      
+                  <div class="bundle-card__price">
+                    <span class="bundle-card__old">€108</span>
+                    <span class="bundle-card__new">€89</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+      
+            <!-- CARD 2 -->
+            <article class="bundle-card">
+              <div class="bundle-card__media">
+                <span class="bundle-card__badge">2 Courses</span>
+      
+                <div class="bundle-card__ribbon">
+                  <span>Special offer</span>
+                </div>
+      
+                <img src="img/bundle-2.jpg" alt="Bundle image">
+              </div>
+      
+              <div class="bundle-card__body">
+                <h3 class="bundle-card__name">Cultural compass</h3>
+      
+                <p class="bundle-card__desc">
+                  Navigate the complexities of our globalized world with confidence using this comprehensive
+                  cultural toolkit. Begin with the...
+                </p>
+      
+                <div class="bundle-card__bottom">
+                  <a class="bundle-card__btn" href="#">Enroll</a>
+      
+                  <div class="bundle-card__price">
+                    <span class="bundle-card__old">€108</span>
+                    <span class="bundle-card__new">€89</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+      
+            <!-- CARD 3 -->
+            <article class="bundle-card">
+              <div class="bundle-card__media">
+                <span class="bundle-card__badge">2 Courses</span>
+      
+                <div class="bundle-card__ribbon">
+                  <span>Special offer</span>
+                </div>
+      
+                <img src="img/bundle-3.jpg" alt="Bundle image">
+              </div>
+      
+              <div class="bundle-card__body">
+                <h3 class="bundle-card__name">Talk smarter, think broader</h3>
+      
+                <p class="bundle-card__desc">
+                  Embark on a journey to master the art of communication with this insightful duo. Start by
+                  honing your ability to express ideas clearly,...
+                </p>
+      
+                <div class="bundle-card__bottom">
+                  <a class="bundle-card__btn" href="#">Enroll</a>
+      
+                  <div class="bundle-card__price">
+                    <span class="bundle-card__old">€108</span>
+                    <span class="bundle-card__new">€89</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+    <!-- Дальше можешь добавлять другие секции courses -->
+  </main>
+
+  <!-- FOOTER (копируешь из index.html) -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__logo">
+        <img src="img/logo-circle.png" alt="Connectica logo">
+      </div>
+
+      <div class="footer__contact">
+        <span>Contact us:</span>
+        <a href="mailto:weconnectica@gmail.com">weconnectica@gmail.com</a>
+      </div>
+
+      <a class="footer__linkedin" href="#" aria-label="LinkedIn">in</a>
+
+      <div class="footer__copy">Copyright © 2024</div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

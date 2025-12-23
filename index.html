@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tech Sphere — стиль как в референсе</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+  
+  <script src="js/main.js"></script>
+  
+
+
+
+
+    <header class="header">
+        <div class="header__inner">
+      
+      <!-- ЛОГО -->
+<a href="#" class="logo">
+  <img src="img/logo.svg" alt="Connectica">
+  <span class="logo-text">CONNECTICA</span>
+</a>
+
+          <!-- НАВИГАЦИЯ -->
+          <nav class="nav">
+            <a href="#" class="nav__link nav__link--active">Home</a>
+            <a href="/courses.html">Courses</a>
+            <a href="/about.html">About us</a>
+          </nav>
+      
+          <!-- ACTIONS -->
+          <div class="header__actions">
+            <a href="#signin" class="btn-auth btn-auth--ghost">Sign in</a>
+            <a href="#signup" class="btn-auth btn-auth--primary">Sign up</a>
+          </div>
+          
+      
+          <!-- BURGER (mobile) -->
+          <button class="burger" onclick="document.body.classList.toggle('menu-open')">
+            <span></span><span></span><span></span>
+          </button>
+      
+        </div>
+      
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu">
+          <a href="#">Home</a>
+          <a href="/courses.html">Courses</a>
+          <a href="/about.html">About us</a>
+          <a href="#" class="btn btn--outline">Sign in</a>
+          <a href="#" class="btn btn--blue">Sign up</a>
+        </div>
+      </header>
+      
+
+
+
+
+
+
+
+
+  <!-- HERO (BLUE) -->
+  <section class="hero-photo" id="top">
+    <div class="hero-photo__overlay"></div>
+  
+    <div class="container hero-photo__content">
+      <!-- Маленькая строка сверху -->
+      <div class="hero-photo__kicker">
+        <span class="typewrite"
+              data-words='["Turn cultural differences into your team’s superpower"]'
+              data-type-speed="70"
+              data-delete-speed="40"
+              data-pause="1200"
+              data-loop="true"></span>
+        <span class="type-caret" aria-hidden="true"></span>
+      </div>
+  
+      <!-- Главный заголовок -->
+      <h1 class="hero-photo__title">Connectica</h1>
+  
+      <!-- Подзаголовок (тут потом вставишь свой текст) -->
+      <p class="hero-photo__text">
+        Connectica is a simple, smart tool that helps HR and team leaders in international teams see cultural dynamics clearly, spot risks early, and take practical action — without big budgets, extra admin, or long workshops.
+  
+      <!-- Кнопка -->
+      <div class="hero-photo__cta">
+        <a class="btn-cta" href="#map">
+          Get Your Cultural Fit Map
+          <span class="btn-cta__arrow" aria-hidden="true">›</span>
+        </a>
+      </div>
+      
+    </div>
+  </section>
+  
+<!-- 222222222 -->
+<section class="hero">
+  <div class="hero__container">
+    <h2 class="hero__title">
+      Your team’s cultural dynamics — visualized in one<br />
+      simple dashboard
+    </h2>
+
+    <div class="tablet">
+      <img src="img/tel.png" alt="" class="tablet__frame" />
+
+      <div class="tablet__screen">
+        <img
+          src="img/maps.png"
+          alt="Global marketing team – cultural fit map"
+          class="tablet__content"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 33333333 -->
+<section class="culture-issues">
+  <div class=" container culture-issues__container">
+    <div class="culture-issues__content">
+      <h2 class="culture-issues__title">
+        Even the best teams struggle when culture gets overlooked
+      </h2>
+
+      <p class="culture-issues__text">
+        In multicultural teams, misunderstandings don’t just happen once in a while,
+        they’re part of daily life. And if left unchecked, they can quietly erode trust,
+        performance, and retention.
+      </p>
+
+      <p class="culture-issues__subtitle">It’s more than an inconvenience:</p>
+    </div>
+
+    <div class="culture-issues__illustration">
+      <img src="img/icon3.png" alt="Team culture illustration" />
+    </div>
+
+    <ul class="culture-issues__list">
+      <li class="culture-issues__item">
+        <span class="icon icon-money" aria-hidden="true"></span>
+        <span class="culture-issues__label">
+          One key hire leaving in the first year can cost <strong>€50–100K</strong>
+        </span>
+      </li>
+
+      <li class="culture-issues__item">
+        <span class="icon icon-clock" aria-hidden="true"></span>
+        <span class="culture-issues__label">
+          Decisions slow down, rework piles up, and onboarding takes longer
+        </span>
+      </li>
+
+      <li class="culture-issues__item">
+        <span class="icon icon-user" aria-hidden="true"></span>
+        <span class="culture-issues__label">
+          High performers can feel isolated, leading to quiet quitting
+        </span>
+      </li>
+
+      <li class="culture-issues__item">
+        <span class="icon icon-chat" aria-hidden="true"></span>
+        <span class="culture-issues__label">
+          Engagement drops and collaboration suffers
+        </span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+<!-- 3333333333 -->
+<!-- COMMUNICATION = SUCCESS -->
+<section class="comm-success">
+  <div class="container comm-success__container">
+    <h2 class="comm-success__title">
+      <span>Communication</span>
+      <span class="eq">=</span>
+      <span>success</span>
+    </h2>
+
+    <div class="comm-success__text">
+      <p>
+        Research shows that in almost every case, cultural challenges — not professional
+        skill gaps — are the main reason international hires leave early.
+      </p>
+
+      <p>
+        Ineffective communication costs companies up to
+        <strong>$1.2 trillion annually*</strong>.
+        According to <em>The Harris Poll’s report</em>:
+      </p>
+
+      <p>
+        In <strong>99%</strong> of cases, cultural issues rather than lack of professional
+        competence are the reason why expatriates cut short their foreign business trips.*
+      </p>
+
+      <p class="comm-success__source">
+        <em>
+          “Expatriate Management: A Review and Directions for Research in Expatriate
+          Selection, Training, and Repatriation”
+        </em>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 44444444 -->
+
+<!-- CLARITY / CONNECTION / ACTION -->
+<section class="clarity">
+  <div class="container clarity__container">
+    <div class="clarity__content">
+      <h2 class="clarity__title">
+        CLARITY. CONNECTION.<br />
+        ACTION<span class="cursor">|</span>
+      </h2>
+
+      <p class="clarity__lead">
+        Connectica shows you how different backgrounds influence the way your team works
+        together — and gives you practical tools to bridge the gaps.
+      </p>
+
+      <a href="#" class="clarity__btn">Sign up now</a>
+
+      <div class="clarity__kicker">Key features:</div>
+
+      <div class="clarity__features">
+        <div class="clarity__feature">
+          <div class="clarity__icon"></div>
+          <h4>Cultural Fit Map +<br />Risk Score</h4>
+          <p>
+            See how well team members align culturally and where friction may appear.
+          </p>
+        </div>
+
+        <div class="clarity__feature">
+          <div class="clarity__icon"></div>
+          <h4>Tailored<br />Recommendations</h4>
+          <p>
+            Actionable advice for onboarding, feedback, and collaboration.
+          </p>
+        </div>
+
+        <div class="clarity__feature">
+          <div class="clarity__icon"></div>
+          <h4>Action Cards &amp;<br />Culture Moments</h4>
+          <p>
+            Practical micro-actions that help teams build trust fast.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- сюда вставишь фото -->
+    <div class="clarity__image">
+      <img class="clarfoto" src="/img/clar.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- 55555555 -->
+<section class="why-works">
+  <div class="container why-works__container">
+    <div class="why-works__content">
+      <h2 class="why-works__title">Why Connectica Works</h2>
+
+      <p class="why-works__lead">
+        Not another training. Real progress, day after day.<br />
+        Workshops and coaching can help, but they’re expensive, hard to<br />
+        scale and easy to forget once the session’s over.
+      </p>
+
+      <p class="why-works__sub">We do it differently:</p>
+
+      <ul class="why-works__list">
+        <li>Start with a data-driven audit of your team’s cultural and communication style</li>
+        <li>Deliver practical, ready-to-use recommendations from day one</li>
+        <li>Keep the momentum with fresh insights every quarter</li>
+        <li>Work individually with you to adapt every step to your context and goals</li>
+      </ul>
+    </div>
+
+    <div class="why-works__media">
+      <div class="why-works__grid">
+        <!-- сюда вставишь свои картинки -->
+        <div class="why-works__card why-works__card--a">
+          <img src="/img/maps.png" alt="Workshop session">
+        </div>
+        
+        <div class="why-works__card why-works__card--a">
+          <img src="img/example-1.jpg" alt="Workshop session">
+        </div>
+
+        <div class="why-works__card why-works__card--a">
+          <img src="img/example-1.jpg" alt="Workshop session">
+        </div>
+
+        <div class="why-works__card why-works__card--a">
+          <img src="img/example-1.jpg" alt="Workshop session">
+        </div>
+        
+      </div>
+
+      <div class="why-works__dots" aria-hidden="true">
+        <span class="dot dot--active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 66666666 -->
+<section class="timeline15">
+  <div class="container timeline15__container">
+    <h2 class="timeline15__title">From kickoff to insights in just 15 days</h2>
+
+    <div class="timeline15__track">
+      <div class="timeline15__line" aria-hidden="true"></div>
+
+      <div class="timeline15__item timeline15__item--left timeline15__item--t1">
+        <div class="timeline15__text">Quick setup — a short call with HR (30–60 min)</div>
+        <span class="timeline15__dot" aria-hidden="true"></span>
+      </div>
+
+      <div class="timeline15__item timeline15__item--right timeline15__item--t2">
+        <span class="timeline15__dot" aria-hidden="true"></span>
+        <div class="timeline15__text">Fit map &amp; risk score are ready within 15 working days</div>
+      </div>
+
+      <div class="timeline15__item timeline15__item--left timeline15__item--t3">
+        <div class="timeline15__text">
+          Action cards for managers with step-by-step tips they<br />
+          can apply right away
+        </div>
+        <span class="timeline15__dot" aria-hidden="true"></span>
+      </div>
+
+      <div class="timeline15__item timeline15__item--right timeline15__item--t4">
+        <span class="timeline15__dot" aria-hidden="true"></span>
+        <div class="timeline15__text">
+          Quarterly updates, so progress is tracked and issues<br />
+          don’t get missed
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- 66666666 -->
+ <section class="why-matters">
+  <div class="container why-matters__container">
+    <h2 class="why-matters__title">Why it matters</h2>
+
+    <div class="why-matters__grid">
+      <div class="why-matters__item">
+        <h3 class="why-matters__h">International<br />turnover is<br />expensive</h3>
+        <p class="why-matters__p">
+          Replacing one international hire can cost €50–100K (including recruitment, onboarding,
+          lost productivity, and team disruption)
+        </p>
+      </div>
+
+      <div class="why-matters__item">
+        <h3 class="why-matters__h">One early<br />departure =<br />major loss</h3>
+        <p class="why-matters__p">
+          Preventing even one exit can save your team months of effort and budget
+        </p>
+      </div>
+
+      <div class="why-matters__item">
+        <h3 class="why-matters__h">Cultural misfit is<br />hard to see early</h3>
+        <p class="why-matters__p">
+          Warning signs often appear months after onboarding, when it’s harder to act
+        </p>
+      </div>
+
+      <div class="why-matters__item">
+        <h3 class="why-matters__h">Connectica<br />gives early<br />visibility</h3>
+        <p class="why-matters__p">
+          We help HRs spot soft signals before they escalate into conflict or turnover
+        </p>
+      </div>
+
+      <div class="why-matters__item">
+        <h3 class="why-matters__h">The result:<br />stronger teams</h3>
+        <p class="why-matters__p">
+          Faster onboarding, smoother collaboration, and better retention
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- 7777777 -->
+<section class="cta">
+  <div class="container cta__container">
+    <div class="cta__icon" aria-hidden="true">
+      <!-- простая иконка как на скрине -->
+      <svg viewBox="0 0 24 24" width="46" height="46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.6 4.8 19.2 9.4" stroke="#2b4a7f" stroke-width="1.7" stroke-linecap="round"/>
+        <path d="M7 17l-1 4 4-1 10-10-3-3L7 17z" stroke="#2b4a7f" stroke-width="1.7" stroke-linejoin="round"/>
+        <path d="M6 4h10" stroke="#2b4a7f" stroke-width="1.7" stroke-linecap="round" opacity=".7"/>
+        <path d="M4 6v14h14" stroke="#2b4a7f" stroke-width="1.7" stroke-linecap="round" opacity=".7"/>
+      </svg>
+    </div>
+
+    <h2 class="cta__title">
+      Turn differences into an advantage your<br />
+      team can feel!
+    </h2>
+
+    <a class="cta__btn" href="#">
+      Book a demo <span class="cta__arrow" aria-hidden="true">›</span>
+    </a>
+  </div>
+</section>
+<!-- 8888888888 -->
+<section class="faq">
+  <div class="container faq__container">
+    <h2 class="faq__title">FAQ</h2>
+
+    <div class="faq__grid">
+      <!-- LEFT: photo -->
+      <div class="faq__photo">
+        <!-- фото вставишь сам -->
+        <img src="img/faq-photo.jpg" alt="Team photo" />
+      </div>
+
+      <!-- RIGHT: accordion -->
+      <div class="faq__accordion" data-accordion>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="true">
+            <span class="faq__icon" aria-hidden="true"></span>
+            What exactly does Connectica do?
+          </button>
+          <div class="faq__a" role="region">
+            <div class="faq__a-inner">
+              We help HR and team leaders in multicultural teams see how cultural differences impact
+              collaboration. Through a simple Fit Map and tailored advice, you get early signals of
+              potential friction — and practical tools to address them.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false">
+            <span class="faq__icon" aria-hidden="true"></span>
+            Is this another training or workshop?
+          </button>
+          <div class="faq__a" role="region">
+            <div class="faq__a-inner">
+              No. Connectica is a lightweight tool, not a course. It gives you clear, visual insights and
+              ready-to-use tips that fit into daily work — without extra admin, expensive sessions, or
+              long prep.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false">
+            <span class="faq__icon" aria-hidden="true"></span>
+            What’s included in the Cultural Fit Map?
+          </button>
+          <div class="faq__a" role="region">
+            <div class="faq__a-inner">
+              <ul class="faq__list">
+                <li>Key communication and collaboration styles in your team</li>
+                <li>Potential risk zones where misunderstandings may occur</li>
+                <li>A simple Risk Score to guide your next steps</li>
+                <li>Tailored recommendations for onboarding, leadership and daily interaction</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false">
+            <span class="faq__icon" aria-hidden="true"></span>
+            How long does it take to get started?
+          </button>
+          <div class="faq__a" role="region">
+            <div class="faq__a-inner">
+              Usually a quick setup call (30–60 minutes), then your Fit Map is ready within 15 working days.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false">
+            <span class="faq__icon" aria-hidden="true"></span>
+            What kind of results can we expect?
+          </button>
+          <div class="faq__a" role="region">
+            <div class="faq__a-inner">
+              <ul class="faq__list">
+                <li>Reduce friction and misunderstandings in multicultural teams</li>
+                <li>Speed up onboarding and adaptation for new hires</li>
+                <li>Strengthen inclusion and retention</li>
+                <li>Preventing even one early departure can save €50,000–100,000</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false">
+            <span class="faq__icon" aria-hidden="true"></span>
+            Who is this for?
+          </button>
+          <div class="faq__a" role="region">
+            <div class="faq__a-inner">
+              Connectica is built for HR teams and leaders managing international or multicultural teams —
+              especially in fast-moving, mid-sized companies where culture often gets overlooked.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false">
+            <span class="faq__icon" aria-hidden="true"></span>
+            Is it GDPR compliant?
+          </button>
+          <div class="faq__a" role="region">
+            <div class="faq__a-inner">
+              Yes. We only collect the minimum data required, store it securely, and never share it with
+              third parties. All insights are anonymized unless otherwise agreed with you.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false">
+            <span class="faq__icon" aria-hidden="true"></span>
+            How much does it cost?
+          </button>
+          <div class="faq__a" role="region">
+            <div class="faq__a-inner">
+              We currently offer early access at a fixed monthly price, with no long-term commitment.
+              Book a demo to see the map and get a tailored quote for your team size.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- 999999999 -->
+ <section class="support">
+  <div class="container support__container">
+    <!-- LEFT -->
+    <div class="support__text">
+      <h2 class="support__title">
+        Proudly supported<br>
+        and inspired by
+      </h2>
+      <p class="support__subtitle">
+        We are deeply thankful to our mentors
+      </p>
+    </div>
+
+    <!-- RIGHT: LOGOS -->
+    <div class="support__logos">
+      <div class="support__logo">
+        <img src="img/helsinki-education-hub.png" alt="Helsinki Education Hub">
+      </div>
+
+      <div class="support__logo">
+        <img src="img/tech-nordic-advocates.png" alt="Tech Nordic Advocates">
+      </div>
+
+      <div class="support__logo">
+        <img src="img/business-helsinki.png" alt="Business Helsinki">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 100000000000 -->
+<footer class="footer">
+  <div class="container footer__container">
+    <!-- logo -->
+    <div class="footer__logo">
+      <img src="img/logo-circle.png" alt="Connectica logo">
+    </div>
+
+    <!-- contact -->
+    <div class="footer__contact">
+      <span>Contact us:</span>
+      <a href="mailto:weconnectica@gmail.com">weconnectica@gmail.com</a>
+    </div>
+
+    <!-- linkedin -->
+    <a class="footer__linkedin" href="#" aria-label="LinkedIn">
+      in
+    </a>
+
+    <!-- copyright -->
+    <div class="footer__copy">
+      Copyright © 2024
+    </div>
+  </div>
+</footer>
+
+
+
+  </script>
+<script src="js/main.js"></script>
+</body>
+</html>
