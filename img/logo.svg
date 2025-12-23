@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="CONNECTICA logo">
+  <defs>
+    <!-- мягкий фон -->
+    <radialGradient id="bg" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1ede7"/>
+    </radialGradient>
+
+    <!-- градиент кольца -->
+    <linearGradient id="ringGrad" x1="18%" y1="20%" x2="82%" y2="82%">
+      <stop offset="0%" stop-color="#7FF0E4"/>
+      <stop offset="38%" stop-color="#2F70FF"/>
+      <stop offset="72%" stop-color="#8AA8FF"/>
+      <stop offset="100%" stop-color="#FF4D78"/>
+    </linearGradient>
+
+    <!-- чуть “свечения” вокруг кольца -->
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- тень линии -->
+    <filter id="lineShadow" x="-20%" y="-200%" width="140%" height="500%">
+      <feDropShadow dx="0" dy="6" stdDeviation="3" flood-color="#0B1630" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- фон-круг -->
+  <circle cx="512" cy="512" r="460" fill="url(#bg)"/>
+
+  <!-- градиентное кольцо -->
+  <circle
+    cx="512" cy="520" r="250"
+    fill="none"
+    stroke="url(#ringGrad)"
+    stroke-width="54"
+    stroke-linecap="round"
+    filter="url(#softGlow)"
+    opacity="0.95"
+  />
+
+  <!-- надпись -->
+  <text
+    x="512" y="560"
+    text-anchor="middle"
+    font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
+    font-size="92"
+    font-weight="500"
+    letter-spacing="4"
+    fill="#1A1F44"
+  >CONNECTICA</text>
+
+  <!-- линия -->
+  <rect
+    x="170" y="592"
+    width="684" height="10"
+    rx="5"
+    fill="#1A1F44"
+    filter="url(#lineShadow)"
+    opacity="0.95"
+  />
+</svg>
